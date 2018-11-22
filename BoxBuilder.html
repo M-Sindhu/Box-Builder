@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>
+			Box Builder
+		</title>
+		<link type="text/css" rel="stylesheet" href="boxStyles.css">	<!--Including CSS for styling buttons-->
+		<script type="text/javascript" src="boxScript.js"></script>	<!--Including JavaScript for adding functionality to buttons-->
+	</head>
+	<body>
+		<center>
+			<h1>
+				Box Builder
+			</h1>
+			<h4>
+				Start Building
+			</h4>
+			<pre><button class="button" onclick="addBox(); boxCount()">Add Box</button> <button class="button buttonRemove" onclick="removeBox(); boxCount()">Remove Box</button></pre>
+			<!--Here onclick invokes both the functions : one to add/remove box and the second one to display the count of boxes-->
+			<div id=boxDiv></div><br>
+			<div id="count">
+				No boxes
+			</div>
+		</center>
+	</body>
+</html>
